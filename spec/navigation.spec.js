@@ -26,7 +26,8 @@ describe("Navigation", () => {
     "assert that logo redirect is correct",
     async () => {
       await page.goto(APP);
-      await page.waitForSelector(".header a.logo");
+      const logo = await page.$eval("header a.logo", el => (el ? true : false));
+      expect(logo).toBe(true);
       await page.click(".header a.logo");
       const title = await page.title();
       expect(title).toBe("Solar Analyze | Home");
