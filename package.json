@@ -1,0 +1,17 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mark Omarov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.3.0",
+    "puppeteer": "https://github.com/GoogleChrome/puppeteer/"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
